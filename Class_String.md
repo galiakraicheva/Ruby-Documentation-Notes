@@ -33,6 +33,14 @@ str[start, length] -> new string or nil
 This methods also takes a substring. The start index is the index of the character right before the first character of the substring. So the character with the start index is not included in the substring. 
 ***
 
+capitalize -> new string
+Returns a new string with the first letter capitalized and all the other letters in lowercase. On the contrary, the method #capitalize! returns the same string modified or nil if there were no modifications to the string. 
+***
 
+chars -> an_array
+Returns an array of all the characters of the string. 
+***
+
+chomp -> new_string
 
 
