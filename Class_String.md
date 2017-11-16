@@ -25,6 +25,13 @@ If the second string is greater: returns -1.
 If the two values are incomparable: returns nil. For example, one of them is a number, the other is a string.
 ***
 
+str[index] -> new string or nil
+This method threats the string as if it were an array and returns a substring with the character that was at this "index" position in the original string. As with arrays, counting starts at 0. Returns nil if there is no such an index. 
+***
+
+str[start, length] -> new string or nil
+This methods also takes a substring. The start index is the index of the character right before the first character of the substring. So the character with the start index is not included in the substring. 
+***
 
 
 
