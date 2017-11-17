@@ -30,7 +30,7 @@ This method threats the string as if it were an array and returns a substring wi
 ***
 
 str[start, length] -> new string or nil
-This methods also takes a substring. The start index is the index of the character right before the first character of the substring. So the character with the start index is not included in the substring. 
+This methods also takes a substring. The start index is the index of the first character of the substring and length is the number of characters included afterwards. So the character with the start index is also included. 
 ***
 
 capitalize -> new string
@@ -42,5 +42,26 @@ Returns an array of all the characters of the string.
 ***
 
 chomp -> new_string
+Removes the new line symbol at the end of the line. In most operating systems it is /n but in some it is /n/r or some other combination. The full name of this method is chomp(separator=$/), which means that in the separator argument you can specify how the new line symbol looks like. By default, the separator is $/ so if you don't provide a separator, $/ will be used. 4/ is a global variable which contains the new line character of the operating system. 
+Example:
+"hello".chomp -> "hello"
+"hello\n".chomp -> "hello"
+"hello \n there".chomp -> "hello \n there"
+"hello".chomp("llo") -> "he"
+***
+
+chop -> new_string
+Return a substring of the original string without the last character. 
+***
+
+chr -> string
+Returns a substring with the first character of the string.
+***
+
+clear -> empty_string
+Removes all the content of the string and returns the string empty.
+
+
+
 
 
